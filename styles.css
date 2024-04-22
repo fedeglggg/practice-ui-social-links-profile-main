@@ -1,0 +1,113 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+:root {
+  --ff-inter: "Inter", sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+  --clr-greem: hsl(75, 94%, 57%);
+  --fs-regular: 0.875rem;
+  --fs-medium: 1rem;
+  --fs-large: 1.2rem;
+  --fs-very-large: 1.4rem;
+  --fs-extra-large: 2.5rem;
+}
+
+/* css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* end css reset */
+
+html {
+  font-family: var(--ff-inter);
+  background-color: var(--clr-off-black);
+  font-size: var(--fs-regular);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  align-content: center;
+  min-height: 100vh; /* This will make the wrapper take the full height of the viewport */
+}
+
+.card {
+  text-align: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+  background-color: yellowgreen;
+  padding: 2.5rem;
+  max-width: min(467px, calc(100vw * 0.8));
+  background-color: var(--clr-dark-grey);
+  border-radius: 1rem;
+}
+
+img {
+  margin-inline: auto;
+  padding-top: 1rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  max-width: 128px;
+}
+
+h1 {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-extra-large);
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+  margin-top: 2rem;
+}
+
+span {
+  color: var(--clr-greem);
+  font-size: var(--fs-very-large);
+  font-weight: var(--fw-semibold);
+}
+
+h2 {
+  color: var(--clr-white);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-large);
+  padding-top: 1.5rem;
+}
+
+li {
+  background-color: var(--clr-grey);
+  border: 1px solid transparent;
+  padding: 1.1rem;
+  margin: 1rem;
+  font-size: var(--fs-large);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-white);
+  border-radius: 0.5rem;
+}
+
+li:hover {
+  background-color: var(--clr-greem);
+  color: var(--clr-dark-grey);
+  cursor: pointer;
+}
