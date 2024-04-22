@@ -58,12 +58,19 @@ ul {
 .card {
   text-align: center;
   margin-inline: auto;
-  margin-block: 1rem;
+  margin-block: 2rem;
   background-color: yellowgreen;
   padding: 2.5rem;
   max-width: min(467px, calc(100vw * 0.8));
   background-color: var(--clr-dark-grey);
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  /* bit of polish */
+  .card {
+    padding: calc(2.5rem - (500px - 100vw) * 0.1);
+  }
 }
 
 img {
@@ -104,6 +111,7 @@ li {
   font-weight: var(--fw-semibold);
   color: var(--clr-white);
   border-radius: 0.5rem;
+  min-width: 100px;
 }
 
 li:hover {
